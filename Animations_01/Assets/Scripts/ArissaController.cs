@@ -9,11 +9,11 @@ public class ArissaController : MonoBehaviour
     void Start()
     {
         anim = GetComponent<Animator>();
-        
+
 
     }
 
-   void Update()
+    void Update()
     {
      
         if (Input.GetKeyDown(KeyCode.X))
@@ -23,6 +23,14 @@ public class ArissaController : MonoBehaviour
          if (Input.GetKeyDown(KeyCode.Z))
         {
             anim.SetTrigger("CatWalkTrigger");
+        }
+         if (Input.GetKeyDown(KeyCode.Y))
+        {
+            anim.SetBool("Caprio", true);
+        }
+        if(Input.GetKeyDown(KeyCode.W))
+        {
+            anim.SetBool("Caprio", false);
         }
     }
 
