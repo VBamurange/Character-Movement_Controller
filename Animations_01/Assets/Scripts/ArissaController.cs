@@ -26,6 +26,7 @@ public class ArissaController : MonoBehaviour
         }
          if (Input.GetKeyDown(KeyCode.Y))
         {
+            
             anim.SetBool("Caprio", true);
         }
         if(Input.GetKeyDown(KeyCode.W))
